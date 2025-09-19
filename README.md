@@ -2,82 +2,100 @@
 
 > Never wonder where to eat again
 
-A modern web application that solves the daily lunch dilemma by providing personalized restaurant recommendations, group ordering capabilities, and seamless food discovery.
+A modern, real-time lunch coordination application that streamlines team meal planning with an intuitive interface, live order tracking, and seamless restaurant selection.
 
 ## 🎯 Problem We're Solving
 
-Every day, millions of people waste valuable time deciding where to order lunch. Teams spend 15-30 minutes in endless group chats debating options, individuals get stuck in lunch ruts, and great nearby restaurants go undiscovered.
+Every day, teams waste valuable time coordinating lunch orders through endless group chats, managing individual preferences, and keeping track of who ordered what from where.
 
 ## 💡 Our Solution
 
-LunchFinder uses smart algorithms to provide instant, personalized lunch recommendations based on:
+LunchFinder provides a centralized platform for lunch coordination featuring:
 
-- 📍 Your location and delivery preferences
-- 🍕 Dietary restrictions and food preferences
-- 💰 Budget constraints
-- ⭐ Reviews and ratings
-- 👥 Group ordering coordination
+- 👤 **Simple Entry** - No complex authentication, just enter your name
+- 🏪 **Curated Restaurants** - Pre-selected quality restaurant options
+- ⚡ **Real-time Updates** - See orders appear instantly as teammates place them
+- 📱 **Modern UI** - Beautiful glassmorphism design with smooth animations
+- 📋 **Order Tracking** - Live sidebar showing all recent team orders
 
 ## ✨ Key Features
 
-- **Smart Recommendations** - AI-powered suggestions based on your preferences
-- **Group Ordering** - Coordinate team lunches with split billing
-- **Discovery Engine** - Find new restaurants and hidden gems
-- **Diet-Friendly** - Filter by dietary restrictions and nutritional goals
-- **Daily Deals** - Access exclusive lunch promotions
-- **Quick Ordering** - One-click ordering with saved preferences
+- **Instant Coordination** - Quick name entry and restaurant selection
+- **Real-time Updates** - Live order feed updates automatically
+- **Restaurant Showcase** - Beautifully presented restaurant options with direct menu links
+- **Order History** - Recent orders sidebar with user names and meal details
+- **Responsive Design** - Works seamlessly on desktop and mobile
+- **Modern Interface** - Glassmorphism UI with gradient backgrounds and smooth animations
 
 ## 🛠️ Tech Stack
 
 **Frontend:**
-- React/Vue.js (planned)
-- HTML5, CSS3, JavaScript
-- Responsive design
+- **React 19** with TypeScript
+- **Tailwind CSS 4** for styling
+- **Vite** for build tooling
+- **Custom CSS animations** and glassmorphism effects
+- **Responsive design** with mobile-first approach
 
 **Backend:**
-- Node.js (planned)
-- RESTful API
-- Database integration
+- **PocketBase** - Self-hosted backend with real-time subscriptions
+- **SQLite** database with automatic migrations
+- **RESTful API** with real-time WebSocket support
+- **File-based** deployment (no complex server setup)
 
-**Features:**
-- Real-time group ordering
-- Payment processing integration
-- Restaurant API connections
-- User preference learning
+**Key Features:**
+- **Real-time coordination** via PocketBase subscriptions
+- **Modern UI patterns** with glassmorphism and gradient effects
+- **Responsive animations** and smooth transitions
+- **Live data updates** without page refreshes
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v16+)
+- Node.js (v18+)
 - npm or yarn
 
 ### Installation
+
+#### 1. Start PocketBase Backend
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/lunchfinder.git
+cd backend
+./pocketbase.exe serve --http=0.0.0.0:8080
+```
 
-# Navigate to project directory
-cd lunchfinder
+#### 2. Setup Database
+1. Visit http://localhost:8080/_/
+2. Create admin account (email: admin@example.com)
+3. The collections will be created automatically
 
-# Install dependencies
+#### 3. Start Frontend
+```bash
+cd frontend
 npm install
-
-# Start development server
 npm run dev
 ```
 
+#### 4. Access Application
+- **Frontend**: http://localhost:5173
+- **Backend Admin**: http://localhost:8080/_/
+
 ### Current Status
-🚧 **In Development** - Currently building the frontend landing pages and planning the full-stack architecture.
+✅ **Fully Functional** - Complete lunch coordination system with real-time updates and modern UI.
 
 ## 📁 Project Structure
 
 ```
-lunchfinder/
-├── docs/           # GitHub Pages landing page
-├── src/           # Source code (coming soon)
-├── public/        # Static assets
-├── index.html     # Demo landing page
-└── README.md      # Project documentation
+votingsystem/
+├── backend/           # PocketBase backend server
+│   ├── pocketbase.exe # PocketBase executable
+│   └── pb_data/      # Database and uploads
+├── frontend/         # React frontend application
+│   ├── src/
+│   │   ├── components/  # React components
+│   │   ├── services/   # API services
+│   │   └── types/      # TypeScript definitions
+│   └── package.json
+├── docs/            # GitHub Pages landing page
+└── README.md
 ```
 
 ## 🤝 Contributing
@@ -102,13 +120,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Roadmap
 
-- [ ] Complete frontend landing page
-- [ ] Backend API development
-- [ ] Restaurant integration
-- [ ] User authentication
-- [ ] Group ordering system
-- [ ] Mobile app
-- [ ] AI recommendation engine
+- [x] **Frontend Application** - Modern React app with glassmorphism UI
+- [x] **Real-time Backend** - PocketBase integration with live updates
+- [x] **Restaurant Management** - Curated restaurant selection system
+- [x] **Order Coordination** - Live order tracking and history
+- [x] **Responsive Design** - Mobile and desktop optimization
+- [ ] **Enhanced Features** - User preferences and favorites
+- [ ] **Restaurant Integration** - Direct ordering API connections
+- [ ] **Mobile App** - Native iOS/Android applications
+- [ ] **Advanced Analytics** - Order patterns and recommendations
 
 ---
 

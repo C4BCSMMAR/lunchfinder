@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Pizza Palace",
+    "cuisine": "Italian",
+    "menu_url": "https://example.com/pizza-palace-menu",
+    "image": "🍕",
+    "description": "Authentic Italian pizza with fresh ingredients and traditional recipes"
+  },
+  {
+    "name": "Burger Junction",
+    "cuisine": "American",
+    "menu_url": "https://example.com/burger-junction-menu",
+    "image": "🍔",
+    "description": "Gourmet burgers with crispy fries and milkshakes"
+  },
+  {
+    "name": "Sushi Masters",
+    "cuisine": "Japanese",
+    "menu_url": "https://example.com/sushi-masters-menu",
+    "image": "🍣",
+    "description": "Fresh sushi and traditional Japanese specialties"
+  },
+  {
+    "name": "Taco Express",
+    "cuisine": "Mexican",
+    "menu_url": "https://example.com/taco-express-menu",
+    "image": "🌮",
+    "description": "Quick Mexican food with bold flavors and fresh ingredients"
+  },
+  {
+    "name": "Green Bowl",
+    "cuisine": "Healthy",
+    "menu_url": "https://example.com/green-bowl-menu",
+    "image": "🥗",
+    "description": "Fresh salads and healthy meal options for conscious eaters"
+  },
+  {
+    "name": "Noodle House",
+    "cuisine": "Asian",
+    "menu_url": "https://example.com/noodle-house-menu",
+    "image": "🍜",
+    "description": "Traditional Asian noodle dishes and soups"
+  }
+]
